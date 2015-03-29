@@ -1,18 +1,18 @@
 ---
 layout: bootcamp2
 root: .
-venue: CSC - IT Center for Science
-address: Espoo, Finland 
-country: Finland
-humandate: Mar 18-19, 2015
+venue: Utrecht University 
+address: Utrecht, Netherlands
+country: Netherlands
+humandate: Jun 22-23, 2015
 humantime: 9:00 am - 5:00 pm 
-startdate: 2015-03-18
-enddate: 2015-03-19
-latlnang: 60.178127,24.832749
-registration: open
-instructor: ["François Michonneau","Aleksandra Pawlik"]
-helper: ["Mateusz Kuzak", "Philip Lijnzaad", "Diana Marek", "Damiano Piovesan", "Andrea Manconi", "Ari-Matti Saren", "Gonçalo Antunes"]
-eventbrite: 15497017998
+startdate: 2015-06-22
+enddate: 2015-06-23
+#latlnang: 60.178127,24.832749
+#registration: open
+instructor: ["Karthik Ram","Aleksandra Pawlik"]
+helper: ["Mateusz Kuzak", "Philip Lijnzaad"]
+#eventbrite: 15497017998
 contact: data-carpentry@software-carpentry.org
 ---
 <!--
@@ -35,12 +35,14 @@ contact: data-carpentry@software-carpentry.org
     - for one waitlist room and one room use 253px,
     - for two waitlist room use 197px.
 -->
+
+<!--
 {% if page.eventbrite %}
 <iframe
   src="//www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" height="300px" scrolling="auto"></iframe>
 {% endif %}
 
-
+-->
 
 
 
@@ -89,17 +91,17 @@ Data Carpentry is a partnership of several NSF-funded <a href="http://www.nsf.go
 -->
 
 
-<h2>Schedule</h2>
+<h2>Schedule (TBC)</h2>
 
 <table class="table table-striped">
   <tr> <td>Wednesday</td><td>09:00 - 9:30</td>  <td>Introduction</td> </tr>
-  <tr> <td></td>        <td>09:30 - 10:30</td> <td>Better use of spreadsheets - part 1</td> </tr>
+  <tr> <td></td>        <td>09:30 - 10:30</td> <td>Better use of spreadsheets</td> </tr>
   <tr> <td></td>        <td>10:30 - 11:00</td> <td>Break</td> </tr>
-  <tr> <td></td>        <td>11:00 - 12:00</td> <td>Better use of spreadsheets - part 2</td> </tr>
+  <tr> <td></td>        <td>11:00 - 12:00</td> <td>Introduction to R</td> </tr>
   <tr> <td></td>        <td>12:00 - 13:00</td>  <td>Lunch break</td> </tr>
-  <tr> <td></td>        <td>13:00 - 14:30</td> <td>Introduction to R - part 1</td> </tr>
+  <tr> <td></td>        <td>13:00 - 14:30</td> <td>Working with data in R - part 1</td> </tr>
   <tr> <td></td>        <td>14:30 - 15:00</td>  <td>Coffee break</td> </tr>
-  <tr> <td></td>        <td>15:00 - 16:45</td>  <td>Introduction to R - part 2</td> </tr>
+  <tr> <td></td>        <td>15:00 - 16:45</td>  <td>Working with data in R - part 2</td> </tr>
   <tr> <td></td>       <td>16:45 - 17:00</td>  <td>Wrap-up</td> </tr>
   
   <!-- empty line -->    
@@ -118,17 +120,11 @@ Data Carpentry is a partnership of several NSF-funded <a href="http://www.nsf.go
 
 <hr/>
 
-
-<h2> Venue</h2>
-<div>
-  CSC, Life Science Center Keilaniemi, Keilaranta 14, Espoo <br/>
- CSC teaching room on the ground floor (room 1372).
  </div>
 
 <!--
-    Edit the setup instructions in _includes/setup.html to reflect your bootcamp.
-    (In particular, most bootcamps teach either Python or R, not both.)
--->
+
+
 <div>
 
 <h2> Syllabus</h2>
@@ -144,40 +140,6 @@ Data Carpentry is a partnership of several NSF-funded <a href="http://www.nsf.go
             <li>Caveats of popular data and file formats.</li>
             <li><a href="http://apawlik.github.io/excel-ecology/ecology-examples/00-intro.html">Lessons</a></li>   
         </ul>
- <!--
-   <h4>Lessons</h4>
-        <ul>
-            <li><a href="{{page.root}}/lessons/spreadsheet/ecology-examples/00-intro.html">Introduction</a></li>
-            <li><a href="{{page.root}}/lessons/spreadsheet/ecology-examples/01-format-data.html">Lesson 1: Formatting data</a></li>
-            <li><a href="{{page.root}}/lessons/spreadsheet/ecology-examples/02-common-mistakes.html">Lesson 2: Common formatting mistakes</a></li>
-            <li><a href="{{page.root}}/lessons/spreadsheet/ecology-examples/03-dates-as-data.html">Lesson 3: Dates as data</a></li>
-            <li><a href="{{page.root}}/lessons/spreadsheet/ecology-examples/04-quality-control.html">Lesson 4: Basic quality control</a></li>
-            <li><a href="{{page.root}}/lessons/spreadsheet/ecology-examples/05-exporting-data.html">Lesson 5: Exporting data</a></li>
-            <li><a href="{{page.root}}/lessons/spreadsheet/ecology-examples/06-data-formats-caveats.html">Lesson 6: Caveats of popular data and file formats</a></li>
-        </ul>
-
-
-
-
-
-        <h3>Managing experimental metadata in tables</h3>
-        <ul>
-            <li>>Managing life science experimental metadata in tables.</li>
-            <li>Discovery of Metadata Standards and Databases. </li>
-            <li> Tools shed</li>
-            
-        </ul>
-
-   <h4>Lessons</h4>
-        <ul>
-            <li><a href="{{page.root}}/lessons/isa-tools/01-experimental-metadata.html">Managing life science experimental metadata in tables</a></li>
-             <li><a href="{{page.root}}/lessons/isa-tools/metadata-standard-discovery.html">Discovery of Metadata Standards and Databases</a></li>
-             <li><a href="{{page.root}}/lessons/isa-tools/tools-shed.html">Tools shed</a></li>
-
-        </ul>
-
--->
-
 
         <h3>The Unix Shell</h3>
         <ul>
@@ -200,18 +162,6 @@ Data Carpentry is a partnership of several NSF-funded <a href="http://www.nsf.go
         </ul>
 
 
-<!--
-   <h4>Lessons</h4>
-        <ul>
-            <li><a href="{{page.root}}/lessons/shell/00-intro.html">Lesson 1: Introduction</a></li>
-            <li><a href="{{page.root}}/lessons/shell/01-filedir.html">Lesson 2: Files and Directories</a></li>
-            <li><a href="{{page.root}}/lessons/shell/02-create.html">Lesson 3: Creating things</a></li>
-            <li><a href="{{page.root}}/lessons/shell/03-pipefilter.html">Lesson 4: Pipes and Filters</a></li>
-            <li><a href="{{page.root}}/lessons/shell/04-loop.html">Lesson 5: Loops</a></li>
-            <li><a href="{{page.root}}/lessons/shell/05-script.html">Lesson 6: Shell scripts</a></li>
-            <li><a href="{{page.root}}/lessons/shell/06-find.html">Lesson 7: Finding things</a></li>
-        </ul>
--->
 
     <h3>Introduction and data manipulation with R</h3>
         <ul>
@@ -238,10 +188,8 @@ Data Carpentry is a partnership of several NSF-funded <a href="http://www.nsf.go
             <li><a href="http://apawlik.github.io/2014-11-27-elixiruk-manchester/lessons/sql/sql.html">Introduction to working with data in SQL</a></li>
         </ul>
 
-
-
-
 </div>
+-->
 
 <!--
 <h2>Additional Resources</h2>
