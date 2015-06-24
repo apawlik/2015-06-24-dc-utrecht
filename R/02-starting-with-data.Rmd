@@ -47,24 +47,18 @@ that contains the survey data from figshare, and we will use `read.csv()` to
 load into memory (as a `data.frame`) the content of the CSV file:
 
 - First, make sure you are in the correct working directory by typing `getwd()`.
-- Second, create a new directory within this working directory called `data`. You
-can do this by clicking on the new folder icon in RStudio under the file tab, or
-by typing `dir.create("data")` at the terminal.
-- Third, download the data:
 
-```{r, eval=FALSE, purl=TRUE}
-if (!require("curl")) {
-  install.packages("curl")
-}
-library("curl")
-curl_download("https://dl.dropboxusercontent.com/u/22808457/portal_data_joined.csv",
-              "data/portal_data_joined.csv")
+Next we'll download a data file.
+
+```{r, eval = TRUE}
+download.file("http://inundata.org/portal_data_joined.csv", destfile = "portal_data_joined.csv")
 ```
+
 
 You are now ready to load the data:
 
 ```{r, eval=TRUE,  purl=FALSE}
-surveys <- read.csv('data/portal_data_joined.csv')
+surveys <- read.csv('portal_data_joined.csv')
 ```
 
 This statement doesn't produce any output because assignment doesn't display
@@ -75,7 +69,7 @@ Alternatively, wrapping an assignment in parentheses will perform the assignment
 and display it at the same time.
 
 ```{r, eval = TRUE, purl = FALSE}
-(surveys <- read.csv('data/portal_data_joined.csv'))
+(surveys <- read.csv('portal_data_joined.csv'))
 ```
 
 Wow... that was a lot of output. At least it means the data loaded

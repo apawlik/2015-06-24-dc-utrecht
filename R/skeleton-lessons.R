@@ -19,12 +19,7 @@ sessionInfo()
 
 
 # Presentation of the survey data
-## if (!require("curl")) {
-##   install.packages("curl")
-## }
-## library("curl")
-## curl_download("https://dl.dropboxusercontent.com/u/22808457/portal_data_joined.csv",
-##               "data/portal_data_joined.csv")
+download.file("http://inundata.org/portal_data_joined.csv", destfile = "portal_data_joined.csv")
 ## Exercise
 ## Based on the output of `str(surveys)`, can you answer the following questions?
 ## * What is the class of the object `surveys`?
